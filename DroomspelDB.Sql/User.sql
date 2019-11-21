@@ -1,0 +1,10 @@
+﻿CREATE TABLE [dbo].[User]
+(
+	[Id] UNIQUEIDENTIFIER NOT NULL PRIMARY KEY NONCLUSTERED,
+	[Name] NVARCHAR(30) NOT NULL,
+	[Avatar] NVARCHAR(30) NOT NULL,
+	[AvatarLevelUnlocked] INT NOT NULL,
+	[Theme] NVARCHAR(30) NOT NULL,
+	[ThemeLevelUnlocked] INT NOT NULL,
+	[TotalGamePoints] INT NOT NULL
+)

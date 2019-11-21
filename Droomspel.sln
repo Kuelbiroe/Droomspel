@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Droomspel.Web", "Droomspel.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Droomspel.data", "Droomspel.data\Droomspel.data.csproj", "{BFC2DCE9-C0FE-40AC-B020-B9E1BEDD0472}"
 EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "DroomspelDB.Sql", "DroomspelDB.Sql\DroomspelDB.Sql.sqlproj", "{FD60088F-1278-47C8-BDDF-094EE38AFD7F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,12 @@ Global
 		{BFC2DCE9-C0FE-40AC-B020-B9E1BEDD0472}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BFC2DCE9-C0FE-40AC-B020-B9E1BEDD0472}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BFC2DCE9-C0FE-40AC-B020-B9E1BEDD0472}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD60088F-1278-47C8-BDDF-094EE38AFD7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD60088F-1278-47C8-BDDF-094EE38AFD7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD60088F-1278-47C8-BDDF-094EE38AFD7F}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{FD60088F-1278-47C8-BDDF-094EE38AFD7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD60088F-1278-47C8-BDDF-094EE38AFD7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD60088F-1278-47C8-BDDF-094EE38AFD7F}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

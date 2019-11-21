@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Droomspel.data.Services;
+using Droomspel.Web.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,19 +10,58 @@ namespace Droomspel.Web.Controllers
 {
     public class HomeController : Controller
     {
-        public ActionResult Index()
+        IUserData db;
+
+        public HomeController()
         {
-            return View();
+            db = new UserData();
         }
 
-        public ActionResult About()
+        public ActionResult Index()
+        {
+            var model = new IndexViewModel();
+
+            model.UserName = db.GetUserData("").Name; 
+
+            return View(model);
+        }
+
+        public ActionResult AbcIndex()
         {
             ViewBag.Message = "Your application description page.";
 
             return View();
         }
 
-        public ActionResult Contact()
+        public ActionResult MathIndex()
+        {
+            ViewBag.Message = "Your contact page.";
+
+            return View();
+        }
+
+        public ActionResult MessageIndex()
+        {
+            ViewBag.Message = "Your contact page.";
+
+            return View();
+        }
+
+        public ActionResult ProfileIndex()
+        {
+            ViewBag.Message = "Your contact page.";
+
+            return View();
+        }
+
+        public ActionResult MusicIndex()
+        {
+            ViewBag.Message = "Your contact page.";
+
+            return View();
+        }
+
+        public ActionResult GamesIndex()
         {
             ViewBag.Message = "Your contact page.";
 
